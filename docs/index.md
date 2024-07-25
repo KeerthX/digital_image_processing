@@ -12,6 +12,9 @@ hero:
     - theme: alt
       text: Donate
       link: https://rzp.io/l/zU5KVwMzvk
+  image:
+    src: /frontimage.png
+    alt: Front cover
 
 features:
   - title: Fundamentals
@@ -34,14 +37,27 @@ const members = [
       { icon: 'github', link: 'https://github.com/KeerthX' },
       { icon: 'twitter', link: 'https://twitter.com/keerth03' }
     ]
+  },
+  {
+    avatar: 'https://github.com/devendrn.png',
+    name: 'Devendran S S',
+    title: '-',
+    links: [
+      { icon: 'github', link: 'https://github.com/devendrn' }
+    ]
   }
 ]
 </script>
 
 <br>
-<br> 
+<br>
 
 # Contributors
 
 <VPTeamMembers size="small" :members="members" />
 
+<style>
+.VPHero .VPImage {
+    transform: translateX(-50%) translateY(-50%) scale(1.5);
+}
+</style>
